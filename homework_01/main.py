@@ -19,7 +19,7 @@ EVEN = "even"
 PRIME = "prime"
 
 
-def filter_numbers(numbers_list, filter_type)
+def filter_numbers(numbers_list, filter_type):
     """
     функция, которая на вход принимает список из целых чисел,
     и возвращает только чётные/нечётные/простые числа
@@ -32,3 +32,5 @@ def filter_numbers(numbers_list, filter_type)
     """
     if filter_type == ODD:
         return [number for number in numbers_list if number % 2 != 0]
+    if filter_type == EVEN:
+        return [number for number in numbers_list if number % 2 == 0]
